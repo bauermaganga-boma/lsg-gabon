@@ -1,360 +1,438 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LSG — Logistique Services Gabon | Transit, Douane, Consignation</title>
-  <meta name="description" content="Logistique Services Gabon (LSG) : transit aérien et maritime, dédouanement, consignation de navires et entreposage sous douane à Libreville, Owendo et Port-Gentil. Partenaire FedEx / TNT.">
-  <meta name="theme-color" content="#06182b">
-  <meta property="og:title" content="LSG — Transit, Douane, Consignation au Gabon">
-  <meta property="og:description" content="Transit aérien et maritime, consignation de navires, entreposage sous douane — Libreville, Owendo, Port-Gentil.">
-  <meta property="og:image" content="assets/img/port-owendo.jpg">
-  <meta property="og:type" content="website">
-  <link rel="icon" type="image/png" href="assets/img/logo.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/lsg.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LSG — Logistique Services Gabon · Transit, douanes, consignation</title>
+<meta name="description" content="LSG — Logistique Services Gabon : transit aérien et maritime, consignation de navires, entreposage sous douane et assistance administrative. Agences à Libreville, Owendo et Port-Gentil. Partenaire FedEx / TNT.">
+<meta name="theme-color" content="#06182b">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="LSG — Logistique Services Gabon">
+<meta property="og:title" content="LSG — Transit, douanes, consignation au Gabon">
+<meta property="og:description" content="Transit aérien et maritime, consignation de navires, entreposage sous douane. Libreville · Owendo · Port-Gentil.">
+<meta property="og:image" content="assets/img/hero-grues.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Logistique Services Gabon",
+  "alternateName": "LSG",
+  "url": "https://www.lsg-gabon.com",
+  "logo": "assets/img/logo.png",
+  "email": "info.lsg@lsg-gabon.com",
+  "telephone": "+241 11 44 27 27",
+  "address": { "@type": "PostalAddress", "streetAddress": "BP 217, Zone Fret Aéroportuaire", "addressLocality": "Libreville", "addressCountry": "GA" }
+}
+</script>
 </head>
-<body>
+<body id="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-plane" viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></symbol>
+    <symbol id="i-ship" viewBox="0 0 24 24"><path d="M3 17l1.5 3h15L21 17H3zM5 17l-1-5h16l-1 5M8 12V8h8v4M12 4v4"/></symbol>
+    <symbol id="i-anchor" viewBox="0 0 24 24"><path d="M12 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM12 7v14M5 12H3a9 9 0 0 0 18 0h-2M8 10h8"/></symbol>
+    <symbol id="i-warehouse" viewBox="0 0 24 24"><path d="M3 21V9l9-5 9 5v12M7 21v-8h10v8M7 17h10"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h7"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M3 7l9-4 9 4v10l-9 4-9-4zM3 7l9 4 9-4M12 11v10"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 6h12v10H2zM14 10h4l4 3v3h-8M6 17.5a1.5 1.5 0 1 0 0 .01M18 17.5a1.5 1.5 0 1 0 0 .01"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 7l9 7 9-7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11.5A7 7 0 0 1 19 9.5C19 15 12 21 12 21zM12 7.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.2-.7-2.7-1.1-4.4-3.8-4.5-4-.1-.2-1.100-1.400-1.100-2.700s.7-1.900.9-2.200c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.900c.1.200.1.4 0 .5l-.4.6c-.1.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.100 1 2.100 1.300 2.400 1.400.3.100.4.100.6-.1l.8-.9c.2-.3.4-.2.6-.1l1.800.9c.3.100.5.200.5.300.1.200.1.700-.1 1.300z"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><path d="M5 11h14v10H5zM8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><path d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zM21 21l-5-5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM2 21a7 7 0 0 1 14 0M17 4a4 4 0 0 1 0 7M22 21a7 7 0 0 0-4-6"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM12 7v5l3 2"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6zM9 12l2 2 4-4"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-4M12 16V8M16 16v-6"/></symbol>
+    <symbol id="i-msg" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-prev" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+    <symbol id="i-next" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zM12 11v5M12 8v.01"/></symbol>
+    <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2zM9 8h6M9 12h6"/></symbol>
+    <symbol id="i-express" viewBox="0 0 24 24"><path d="M3 12h10M3 8h6M3 16h6M13 6l8 6-8 6z"/></symbol>
+  </defs>
+</svg>
+<a class="skip" href="#contenu">Aller au contenu</a>
 
-<!-- ============ HEADER ============ -->
+<!-- ============ EN-TÊTE ============ -->
 <header class="header" id="header">
   <div class="container header__inner">
-    <a href="#accueil" class="brand" aria-label="LSG — Logistique Services Gabon — accueil">
-      <img src="assets/img/logo.png" alt="Logo LSG" class="brand__logo">
-      <span class="brand__text">LSG<small>Logistique Services Gabon</small></span>
+    <a href="#accueil" class="brand" aria-label="LSG — Logistique Services Gabon, accueil">
+      <span class="brand__logo"><img src="assets/img/logo.png" alt="LSG — Logistique Services Gabon" width="76" height="38"></span>
     </a>
     <nav class="nav" id="nav" aria-label="Navigation principale">
-      <a href="#entreprise">L'entreprise</a>
-      <a href="#expertises">Services</a>
-      <a href="#suivi">Suivi</a>
-      <a href="#installations">Installations</a>
-      <a href="#references">Références</a>
-      <a href="#contact" class="btn btn--gold btn--sm nav__cta">Nous contacter</a>
+      <a class="lnk" href="#accueil">Accueil</a>
+      <a class="lnk" href="#entreprise">L'entreprise</a>
+      <a class="lnk" href="#services">Services</a>
+      <a class="lnk" href="#suivi">Suivi</a>
+      <a class="lnk" href="#agences">Agences</a>
+      <a class="lnk" href="#espace-pro">Espace pro</a>
+      <a class="lnk" href="#contact">Contact</a>
+      <div class="nav__btns">
+        <a href="clients.html" class="btn btn--ghost btn--sm"><svg class="ico" aria-hidden="true"><use href="#i-ship"/></svg>Espace client</a>
+        <a href="espace/index.html" class="btn btn--cyan btn--sm"><svg class="ico" aria-hidden="true"><use href="#i-lock"/></svg>Espace de gestion</a>
+      </div>
     </nav>
-    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<main>
+<main id="contenu">
 
-<!-- ============ HERO ============ -->
+<!-- ============ HÉRO ============ -->
 <section class="hero" id="accueil">
-  <div class="hero__bg" style="background-image:url('assets/img/port-owendo.jpg')"></div>
-  <div class="hero__overlay"></div>
-  <div class="container hero__content">
-    <p class="eyebrow eyebrow--light reveal">Libreville · Owendo · Port-Gentil</p>
-    <h1 class="hero__title reveal">Vos marchandises,<br><em>sans frontières ni lenteurs.</em></h1>
-    <p class="hero__lead reveal">Opérateur de transit, de douane et de consignation au Gabon, LSG prend en charge vos flux aériens et maritimes, du dédouanement à la livraison. <strong>La qualité à votre service.</strong></p>
-    <div class="hero__actions reveal">
-      <a href="#contact" class="btn btn--gold">Demander un devis</a>
-      <a href="#suivi" class="btn btn--ghost">Suivre mon dossier</a>
+  <div class="hero__bg" role="img" aria-label="Grues portuaires au crépuscule, ciel orangé (photo d'illustration)"></div>
+  <div class="container hero__wrap">
+    <div>
+      <p class="hero__badge reveal"><i aria-hidden="true"></i>Transit · Douanes · Consignation</p>
+      <h1 class="reveal d1">Votre fret, <em>du quai à la porte</em>, en toute confiance.</h1>
+      <p class="hero__lead reveal d2">Logistique Services Gabon est un important opérateur de transit et de consignation de navires au Gabon. Transit aérien et maritime, formalités douanières, entreposage sous douane : une seule équipe, de l'arrivée à la livraison.</p>
+      <p class="hero__tags reveal d2" aria-label="Points clés"><span>La Qualité à Votre Service</span><span>Libreville · Owendo · Port-Gentil</span><span>Partenaire FedEx / TNT</span></p>
+      <div class="hero__actions reveal d3">
+        <a href="#contact" class="btn btn--cyan">Demander un devis <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a href="#suivi" class="btn btn--ghost"><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>Suivre mon dossier</a>
+        <a href="espace/index.html" class="btn btn--white"><svg class="ico" aria-hidden="true"><use href="#i-lock"/></svg>Espace de gestion</a>
+      </div>
     </div>
+    <aside class="live reveal d2" id="live" aria-label="Activité en direct, données de démonstration">
+      <div class="live__head"><span class="live__dot">En direct</span><span class="live__demo">Démonstration</span></div>
+      <div class="live__stats">
+        <div><b id="live-quai">–</b><span>navires à quai</span></div>
+        <div><b id="live-att">–</b><span>navires attendus</span></div>
+        <div><b id="live-dos">–</b><span>dossiers en cours</span></div>
+      </div>
+      <ul class="live__list" id="live-list"></ul>
+      <p class="live__foot">Exemple alimenté par l'espace de gestion LSG. <a href="clients.html#escales">Voir toutes les escales</a></p>
+    </aside>
   </div>
-  <div class="hero__strip">
-    <div class="container hero__strip-inner">
-      <span>Transit</span><i></i>
-      <span>Douane</span><i></i>
-      <span>Consignation</span><i></i>
-      <span>Entreposage</span>
+  <span class="hero__scroll" aria-hidden="true"></span>
+</section>
+
+<!-- ============ FAITS ============ -->
+<section class="facts" aria-label="LSG en bref">
+  <div class="container">
+    <div class="facts__grid reveal">
+      <div class="fact"><span class="fact__ico"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg></span><div><b>3 agences</b><span>Libreville, Owendo, Port-Gentil</span></div></div>
+      <div class="fact"><span class="fact__ico"><svg class="ico" aria-hidden="true"><use href="#i-anchor"/></svg></span><div><b>5 métiers</b><span>Transit, consignation, entrepôt, douane, assistance</span></div></div>
+      <div class="fact"><span class="fact__ico"><svg class="ico" aria-hidden="true"><use href="#i-express"/></svg></span><div><b>FedEx / TNT</b><span>Partenaire pour vos colis express</span></div></div>
+      <div class="fact"><span class="fact__ico"><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg></span><div><b>Suivi en ligne</b><span>Votre dossier, étape par étape</span></div></div>
     </div>
   </div>
 </section>
 
-<!-- ============ PROFIL ============ -->
+<!-- ============ ENTREPRISE ============ -->
 <section class="section" id="entreprise">
-  <div class="container profil">
-    <div class="profil__text">
-      <p class="eyebrow reveal">01 — Profil</p>
-      <h2 class="title reveal">Un opérateur gabonais du transit et de la consignation</h2>
-      <p class="reveal"><strong>Logistique Services Gabon (L.S.G.)</strong> est un important opérateur de transit et de consignation de navires au Gabon. Trois agences — le siège à la zone fret de l'aéroport de Libreville, Owendo et Port-Gentil — permettent de suivre vos marchandises au plus près des points d'entrée du pays.</p>
-      <p class="reveal">De l'import à l'export, par avion ou par bateau, LSG assure les formalités douanières, le groupage et dégroupage, l'entreposage sous douane et l'assistance administrative. LSG est également partenaire <strong>FedEx / TNT</strong> pour l'express international.</p>
-
-      <dl class="fiche reveal">
-        <div><dt>Raison sociale</dt><dd>Logistique Services Gabon (LSG)</dd></div>
-        <div><dt>Agences</dt><dd>Libreville (zone fret aéroport, siège), Owendo, Port-Gentil</dd></div>
-        <div><dt>Métiers</dt><dd>Transit, douane, consignation, entreposage</dd></div>
-        <div><dt>Partenaire</dt><dd>FedEx / TNT</dd></div>
-      </dl>
+  <div class="container about">
+    <div class="about__media reveal">
+      <img src="assets/img/facade-agence.jpg" alt="Entrée de l'entrepôt LSG avec affiches Transit et Douanes et accès au magasin sous douane" width="1200" height="400" loading="lazy">
+      <div class="about__badge"><b>Magasin sous douane</b><span>Accès limité et contrôlé</span></div>
     </div>
-    <figure class="pdg reveal">
-      <div class="pdg__img"><img src="assets/img/equipe-terrain.jpg" alt="Un agent LSG en gilet et casque guide un camion de marchandises" loading="lazy" style="object-position:68% 30%"></div>
-      <figcaption>
-        <strong>Des équipes sur le terrain</strong>
-        <span>Au contact de vos marchandises</span>
-      </figcaption>
-    </figure>
-  </div>
-</section>
-
-<!-- ============ IMPLANTATION ============ -->
-<section class="section section--cream">
-  <div class="container implant">
-    <div class="implant__media reveal">
-      <img src="assets/img/facade-agence.jpg" alt="Entrée de l'entrepôt LSG avec affiches Transit, Douanes et magasin sous douane" loading="lazy">
-    </div>
-    <div class="implant__text">
-      <p class="eyebrow reveal">02 — Implantation</p>
-      <h2 class="title reveal">Trois agences, aux portes d'entrée du pays</h2>
-      <p class="reveal">Aéroport, port commercial, capitale pétrolière : LSG est présent là où passent les marchandises.</p>
-      <ul class="atouts">
-        <li class="reveal"><span class="atouts__icon"><svg viewBox="0 0 24 24"><path d="M2 14l20-8-8 16-2-7z"/></svg></span><div><strong>Libreville — siège</strong><p>Zone fret de l'aéroport : fret aérien et express.</p></div></li>
-        <li class="reveal"><span class="atouts__icon"><svg viewBox="0 0 24 24"><path d="M3 17l2 3h14l2-3M5 17V9h14v8M9 9V5h6v4"/></svg></span><div><strong>Owendo</strong><p>Entrepôts sous douane au port.</p></div></li>
-        <li class="reveal"><span class="atouts__icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><div><strong>Port-Gentil</strong><p>Consignation, notamment pétroliers et gaziers.</p></div></li>
-        <li class="reveal"><span class="atouts__icon"><svg viewBox="0 0 24 24"><path d="M8 12l3 3 5-6"/><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6z"/></svg></span><div><strong>Conformité douanière</strong><p>Formalités et assistance administrative.</p></div></li>
+    <div>
+      <p class="eyebrow reveal">L'entreprise</p>
+      <h2 class="title reveal">Un opérateur de transit <em>ancré au Gabon</em></h2>
+      <p class="reveal"><strong>Logistique Services Gabon (L.S.G.)</strong> est un important opérateur de transit et de consignation de navires au Gabon. Son siège se trouve à la zone fret de l'aéroport de Libreville ; l'entreprise est aussi présente à Owendo, où se trouvent ses entrepôts sous douane au port, et à Port-Gentil.</p>
+      <p class="reveal">Partenaire FedEx / TNT, LSG accompagne importateurs, exportateurs, industriels et armateurs dans toutes leurs formalités, avec un seul objectif : que vos marchandises arrivent, sans mauvaise surprise.</p>
+      <div class="slogans reveal"><span>Transit – Douanes – Consignation</span><span>La Qualité à Votre Service</span></div>
+      <ul class="checks reveal">
+        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Un interlocuteur unique pour le transit, la douane et la livraison</span></li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Entrepôts sous douane au port d'Owendo</span></li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Une spécialité de la consignation de navires pétroliers et gaziers</span></li>
       </ul>
+      <a href="#contact" class="btn btn--navy reveal">Parlons de votre projet <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
     </div>
-  </div>
-
-  <div class="container types">
-    <figure class="type reveal"><img src="assets/img/fret-aerien.jpg" alt="Avion cargo sur le tarmac de Libreville" loading="lazy"><figcaption>Fret aérien</figcaption></figure>
-    <figure class="type reveal"><img src="assets/img/port-owendo.jpg" alt="Port d'Owendo de nuit" loading="lazy"><figcaption>Port d'Owendo</figcaption></figure>
-    <figure class="type reveal"><img src="assets/img/entrepot.jpg" alt="Allées d'un entrepôt de stockage" loading="lazy"><figcaption>Entreposage</figcaption></figure>
-    <figure class="type reveal"><img src="assets/img/equipe-portrait.jpg" alt="Agent LSG souriant en casque et gilet" loading="lazy" style="object-position:70% 30%"><figcaption>Assistance &amp; accueil</figcaption></figure>
   </div>
 </section>
 
 <!-- ============ SERVICES ============ -->
-<section class="section" id="expertises">
+<section class="section section--bg" id="services">
   <div class="container">
-    <div class="section__head">
-      <p class="eyebrow reveal">03 — Nos services</p>
-      <h2 class="title reveal">Transit — Douanes — Consignation</h2>
-      <p class="section__lead reveal">Une offre complète pour importer, exporter et escaler au Gabon, avec un seul interlocuteur du premier document à la livraison.</p>
+    <div class="head head--c">
+      <p class="eyebrow reveal">Nos services</p>
+      <h2 class="title reveal">Tout ce qu'il faut pour <em>faire passer votre marchandise</em></h2>
+      <p class="lead reveal">Du fret aérien à la consignation de navires, LSG couvre l'ensemble de la chaîne de transit.</p>
     </div>
-
-    <div class="poles">
-      <article class="pole reveal">
-        <div class="pole__img"><img src="assets/img/fret-aerien.jpg" alt="" loading="lazy"></div>
-        <div class="pole__body">
-          <span class="pole__num">Service 01</span>
-          <h3>Transit aérien</h3>
-          <ul><li>Import / export par fret aérien</li><li>Formalités douanières à l'aéroport de Libreville</li><li>Livraison porte à porte</li></ul>
-        </div>
+    <div class="services">
+      <article class="svc reveal">
+        <div class="svc__img"><img src="assets/img/fret-aerien.jpg" alt="Avion cargo à l'aéroport de Libreville de nuit (photo d'illustration)" width="1600" height="583" loading="lazy"><span class="svc__ico"><svg class="ico" aria-hidden="true"><use href="#i-plane"/></svg></span></div>
+        <div class="svc__body"><h3>Transit aérien</h3><p>Prise en charge de votre fret à la zone fret de l'aéroport de Libreville, de la réception à la livraison.</p>
+          <ul><li>Fret aérien import et export</li><li>Dédouanement à l'aéroport</li><li>Groupage / dégroupage</li></ul></div>
       </article>
-      <article class="pole reveal">
-        <div class="pole__img"><img src="assets/img/port-owendo.jpg" alt="" loading="lazy"></div>
-        <div class="pole__body">
-          <span class="pole__num">Service 02</span>
-          <h3>Transit maritime</h3>
-          <ul><li>Import / export par voie maritime</li><li>Groupage et dégroupage</li><li>Dédouanement au port d'Owendo</li></ul>
-        </div>
+      <article class="svc reveal d1">
+        <div class="svc__img"><img src="assets/img/porte-conteneurs.jpg" alt="Porte-conteneurs escorté par un remorqueur (photo d'illustration)" width="1800" height="1020" loading="lazy"><span class="svc__ico"><svg class="ico" aria-hidden="true"><use href="#i-ship"/></svg></span></div>
+        <div class="svc__body"><h3>Transit maritime</h3><p>Conteneurs et marchandises conventionnelles : suivi du connaissement, formalités et acheminement.</p>
+          <ul><li>Import et export par voie maritime</li><li>Formalités portuaires et douanières</li><li>Livraison porte à porte</li></ul></div>
       </article>
-      <article class="pole reveal">
-        <div class="pole__img"><img src="assets/img/port-owendo.jpg" alt="" loading="lazy" style="object-position:20% 60%"></div>
-        <div class="pole__body">
-          <span class="pole__num">Service 03</span>
-          <h3>Consignation de navires</h3>
-          <ul><li>Agence maritime et escales</li><li>Spécialiste des pétroliers et gaziers</li><li>Présence à Owendo et Port-Gentil</li></ul>
-        </div>
+      <article class="svc reveal d2">
+        <div class="svc__img"><img src="assets/img/port-owendo.jpg" alt="Le port d'Owendo, Gabon, vu de nuit (photo d'illustration)" width="1600" height="667" loading="lazy"><span class="svc__ico"><svg class="ico" aria-hidden="true"><use href="#i-anchor"/></svg></span></div>
+        <div class="svc__body"><h3>Consignation de navires</h3><p>Assistance complète aux armateurs lors des escales, avec une spécialité pour les pétroliers et gaziers.</p>
+          <ul><li>Formalités d'escale</li><li>Relation avec les autorités</li><li>Assistance au navire et à l'équipage</li></ul></div>
       </article>
-      <article class="pole reveal">
-        <div class="pole__img"><img src="assets/img/entrepot.jpg" alt="" loading="lazy"></div>
-        <div class="pole__body">
-          <span class="pole__num">Service 04</span>
-          <h3>Entreposage sous douane</h3>
-          <ul><li>Magasin sous douane, accès contrôlé</li><li>Stockage de vos marchandises</li><li>Entrepôts à Libreville et Owendo</li></ul>
-        </div>
+      <article class="svc reveal">
+        <div class="svc__img"><img src="assets/img/entrepot.jpg" alt="Allée d'entrepôt avec rayonnages de marchandises" width="1200" height="400" loading="lazy"><span class="svc__ico"><svg class="ico" aria-hidden="true"><use href="#i-warehouse"/></svg></span></div>
+        <div class="svc__body"><h3>Entreposage sous douane</h3><p>Vos marchandises stockées en sécurité dans nos magasins sous douane, au port d'Owendo.</p>
+          <ul><li>Magasin sous douane à accès limité</li><li>Stockage avant déclaration ou enlèvement</li><li>Suivi des entrées et sorties</li></ul></div>
       </article>
-      <article class="pole reveal">
-        <div class="pole__img"><img src="assets/img/equipe-portrait.jpg" alt="" loading="lazy" style="object-position:70% 30%"></div>
-        <div class="pole__body">
-          <span class="pole__num">Service 05</span>
-          <h3>Assistance administrative</h3>
-          <ul><li>Constitution et suivi des dossiers</li><li>Obtention de visas, accueil de passagers</li><li>Interface avec les administrations</li></ul>
-        </div>
+      <article class="svc reveal d1">
+        <div class="svc__img"><img src="assets/img/equipe-terrain.jpg" alt="Agent LSG en gilet et casque guidant un camion chargé" width="1200" height="400" loading="lazy"><span class="svc__ico"><svg class="ico" aria-hidden="true"><use href="#i-doc"/></svg></span></div>
+        <div class="svc__body"><h3>Douane et formalités</h3><p>Préparation et dépôt des déclarations, suivi jusqu'au dédouanement : un dossier propre, c'est du temps gagné.</p>
+          <ul><li>Déclarations en douane</li><li>Vérification des documents</li><li>Livraison porte à porte</li></ul></div>
       </article>
-      <article class="pole reveal">
-        <div class="pole__img"><img src="assets/img/equipe-terrain.jpg" alt="" loading="lazy" style="object-position:68% 30%"></div>
-        <div class="pole__body">
-          <span class="pole__num">Service 06</span>
-          <h3>Express FedEx / TNT</h3>
-          <ul><li>Partenaire FedEx / TNT</li><li>Colis et documents à l'international</li><li>Service client dédié</li></ul>
-        </div>
+      <article class="svc reveal d2">
+        <div class="svc__img"><img src="assets/img/equipe-portrait.jpg" alt="Agent LSG souriant, casque et gilet siglés L.S.G" width="1200" height="400" loading="lazy" style="object-position:70% 40%"><span class="svc__ico"><svg class="ico" aria-hidden="true"><use href="#i-users"/></svg></span></div>
+        <div class="svc__body"><h3>Assistance administrative</h3><p>LSG vous accompagne au-delà du fret, pour vos démarches et vos arrivées à l'aéroport.</p>
+          <ul><li>Visas</li><li>Accueil des passagers à l'aéroport</li><li>Formalités douanières</li></ul></div>
       </article>
+    </div>
+    <div class="express reveal">
+      <span class="express__ico"><svg class="ico" aria-hidden="true"><use href="#i-express"/></svg></span>
+      <div><h3>Colis express : partenaire FedEx / TNT</h3><p>Envoyez ou recevez vos colis par le réseau express international, avec les formalités gérées par LSG. Contact : <a href="mailto:cs.fedex@lsg-gabon.com" style="color:#9fe0ff">cs.fedex@lsg-gabon.com</a></p></div>
+      <a href="#contact" class="btn btn--cyan">Expédier un colis</a>
     </div>
   </div>
 </section>
 
-<!-- ============ SUIVI DE DOSSIER ============ -->
-<section class="section section--dark suivi" id="suivi">
-  <div class="container suivi__inner">
-    <div class="suivi__intro">
-      <p class="eyebrow eyebrow--light reveal">04 — Espace client</p>
-      <h2 class="title title--light reveal">Suivez votre dossier en temps réel</h2>
-      <p class="reveal contact__lead">Entrez votre numéro de dossier : visualisez l'étape en cours, du premier document à la livraison. Les équipes LSG mettent chaque dossier à jour depuis leur espace professionnel.</p>
-      <form class="track" id="track-form" autocomplete="off">
-        <label class="sr-only" for="track-input">Numéro de dossier</label>
-        <input type="text" id="track-input" placeholder="Ex. LSG-2026-0412" maxlength="24">
-        <button type="submit" class="btn btn--gold">Suivre</button>
+<!-- ============ SUIVI ============ -->
+<section class="section" id="suivi">
+  <div class="container track">
+    <div class="reveal">
+      <p class="eyebrow">Suivi de dossier</p>
+      <h2 class="title">Où en est <em>votre marchandise ?</em></h2>
+      <p class="lead">Saisissez votre numéro de dossier LSG pour consulter l'avancement : dossier reçu, documents vérifiés, déclaration en douane, dédouanement, livraison.</p>
+      <form class="track__form" data-track data-out="#track-out" novalidate>
+        <label class="sr" for="track-in">Numéro de dossier</label>
+        <input class="input" id="track-in" type="text" placeholder="Ex. LSG-2026-0412" autocomplete="off" inputmode="text" aria-describedby="track-ex">
+        <button type="submit" class="btn btn--navy">Suivre <svg class="ico" aria-hidden="true"><use href="#i-search"/></svg></button>
       </form>
-      <p class="track__hint">Démonstration (données fictives) : essayez <button type="button" class="linklike" data-demo="LSG-2026-0412">LSG-2026-0412</button>, <button type="button" class="linklike" data-demo="LSG-2026-0415">LSG-2026-0415</button> ou <button type="button" class="linklike" data-demo="LSG-2026-0398">LSG-2026-0398</button>.</p>
-      <a href="gestion.html" class="btn btn--ghost">Voir l'espace pro LSG (démo)</a>
+      <div class="examples" id="track-ex"><span>Exemples (démonstration) :</span>
+        <button type="button" class="chip" data-ex="LSG-2026-0412">LSG-2026-0412</button>
+        <button type="button" class="chip" data-ex="LSG-2026-0415">LSG-2026-0415</button>
+        <button type="button" class="chip" data-ex="LSG-2026-0398">LSG-2026-0398</button>
+      </div>
     </div>
-    <div class="track__card" id="track-result" aria-live="polite">
-      <p class="track__empty">Le suivi de votre dossier s'affichera ici.</p>
+    <div class="card reveal d1">
+      <div class="track__out" id="track-out" aria-live="polite">
+        <div class="empty"><svg class="ico" aria-hidden="true"><use href="#i-box"/></svg><p>Le détail de votre dossier s'affichera ici.<br>Essayez un exemple ci-contre.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AGENCES ============ -->
+<section class="section section--bg" id="agences">
+  <div class="container">
+    <div class="head head--c">
+      <p class="eyebrow reveal">Nos agences</p>
+      <h2 class="title reveal">Trois implantations, <em>un même service</em></h2>
+    </div>
+    <div class="agences">
+      <article class="ag ag--hq reveal">
+        <span class="ag__tag">Siège</span>
+        <div class="ag__ico"><svg class="ico" aria-hidden="true"><use href="#i-plane"/></svg></div>
+        <h3>Libreville</h3>
+        <p>Zone fret de l'aéroport : transit aérien, formalités et accueil des passagers.</p>
+        <ul>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><span>BP 217, Zone Fret Aéroportuaire, Libreville</span></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+24111442727">+241 11 44 27 27</a></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:info.lsg@lsg-gabon.com">info.lsg@lsg-gabon.com</a></li>
+        </ul>
+      </article>
+      <article class="ag reveal d1">
+        <div class="ag__ico"><svg class="ico" aria-hidden="true"><use href="#i-warehouse"/></svg></div>
+        <h3>Owendo</h3>
+        <p>Les entrepôts sous douane au port : transit maritime et entreposage.</p>
+        <ul>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><span>Port d'Owendo</span></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+24165996283">+241 65 99 62 83</a></li>
+        </ul>
+      </article>
+      <article class="ag reveal d2">
+        <div class="ag__ico"><svg class="ico" aria-hidden="true"><use href="#i-anchor"/></svg></div>
+        <h3>Port-Gentil</h3>
+        <p>Une présence à Port-Gentil pour accompagner les escales de navires et les clients de la région.</p>
+        <ul>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><span>Port-Gentil</span></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+24165996283">+241 65 99 62 83</a></li>
+        </ul>
+      </article>
     </div>
   </div>
 </section>
 
 <!-- ============ DÉMARCHE ============ -->
-<section class="section section--brown demarche">
+<section class="section section--navy" id="demarche">
   <div class="container">
-    <div class="section__head section__head--center">
-      <p class="eyebrow eyebrow--light reveal">Notre démarche</p>
-      <h2 class="title title--light reveal">De la prise en charge à la livraison</h2>
+    <div class="head head--c">
+      <p class="eyebrow reveal">Notre démarche</p>
+      <h2 class="title reveal">Six étapes, <em>un dossier suivi de bout en bout</em></h2>
+      <p class="lead reveal">Chaque expédition suit le même parcours, et vous pouvez le consulter en ligne à tout moment.</p>
     </div>
     <ol class="steps">
-      <li class="reveal"><span>01</span><strong>Prise en charge</strong><p>Votre demande et vos documents</p></li>
-      <li class="reveal"><span>02</span><strong>Dossier</strong><p>Constitution et vérification</p></li>
-      <li class="reveal"><span>03</span><strong>Déclaration</strong><p>Formalités douanières</p></li>
-      <li class="reveal"><span>04</span><strong>Dédouanement</strong><p>Libération des marchandises</p></li>
-      <li class="reveal"><span>05</span><strong>Entreposage</strong><p>Stockage sous douane si besoin</p></li>
-      <li class="reveal"><span>06</span><strong>Livraison</strong><p>Chez vous ou sur votre site</p></li>
+      <li class="step reveal"><h3>Dossier reçu</h3><p>Votre demande est enregistrée et un numéro de dossier vous est attribué.</p></li>
+      <li class="step reveal d1"><h3>Documents vérifiés</h3><p>Facture, colisage, titre de transport, assurance : tout est contrôlé.</p></li>
+      <li class="step reveal d2"><h3>Déclaration en douane</h3><p>La déclaration est préparée et déposée par nos déclarants.</p></li>
+      <li class="step reveal d1"><h3>Dédouané</h3><p>Les marchandises sont libérées, prêtes à être enlevées.</p></li>
+      <li class="step reveal d2"><h3>En livraison</h3><p>Acheminement jusqu'à votre adresse, porte à porte.</p></li>
+      <li class="step reveal d3"><h3>Livré</h3><p>Livraison confirmée et dossier clôturé.</p></li>
     </ol>
+    <div class="steps-cta reveal"><a href="#suivi" class="btn btn--cyan">Suivre mon dossier <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
   </div>
 </section>
 
-<!-- ============ INSTALLATIONS ============ -->
-<section class="section" id="installations">
-  <div class="container">
-    <div class="section__head">
-      <p class="eyebrow reveal">05 — Installations &amp; équipes</p>
-      <h2 class="title reveal">Là où se jouent vos opérations</h2>
-      <p class="section__lead reveal">Entrepôts, quais, tarmac : un dispositif pensé pour que vos marchandises circulent vite et en sécurité.</p>
+<!-- ============ ESPACE PRO ============ -->
+<section class="section" id="espace-pro">
+  <div class="container pro">
+    <div>
+      <p class="eyebrow reveal">Espace pro · outil de gestion</p>
+      <h2 class="title reveal">Un outil de gestion pensé <em>pour le transit</em></h2>
+      <p class="lead reveal">LSG dispose d'un espace de gestion en ligne : dossiers, escales, entrepôt, clients et facturation au même endroit. Chaque dossier avancé dans l'outil se met à jour dans le suivi public.</p>
+      <ul class="modules reveal">
+        <li><svg class="ico" aria-hidden="true"><use href="#i-chart"/></svg>Tableau de bord</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-doc"/></svg>Dossiers de transit</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-ship"/></svg>Escales de navires</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-warehouse"/></svg>Entrepôt sous douane</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-users"/></svg>Clients</li>
+        <li><svg class="ico" aria-hidden="true"><use href="#i-receipt"/></svg>Factures</li>
+      </ul>
+      <div class="pro__actions reveal">
+        <a href="espace/index.html" class="btn btn--navy"><svg class="ico" aria-hidden="true"><use href="#i-lock"/></svg>Ouvrir l'espace de gestion</a>
+        <a href="clients.html" class="btn btn--line">Espace clients &amp; armateurs</a>
+      </div>
+      <p class="demo-note reveal">Version de démonstration : toutes les données sont fictives.</p>
     </div>
-
-    <div class="gallery" id="gallery">
-      <figure class="g-item g-item--wide"><img src="assets/img/facade-agence.jpg" alt="Entrée de l'entrepôt LSG" loading="lazy"><figcaption>Entrepôt LSG — magasin sous douane</figcaption></figure>
-      <figure class="g-item g-item--wide"><img src="assets/img/entrepot.jpg" alt="Allées d'un entrepôt" loading="lazy"><figcaption>Entreposage en rayonnages</figcaption></figure>
-      <figure class="g-item g-item--wide"><img src="assets/img/port-owendo.jpg" alt="Port d'Owendo de nuit" loading="lazy"><figcaption>Port d'Owendo</figcaption></figure>
-      <figure class="g-item g-item--wide"><img src="assets/img/fret-aerien.jpg" alt="Avion cargo à l'aéroport de Libreville" loading="lazy"><figcaption>Fret aérien — aéroport de Libreville</figcaption></figure>
-      <figure class="g-item g-item--wide"><img src="assets/img/equipe-terrain.jpg" alt="Agent LSG guidant un camion" loading="lazy" style="object-position:68% 30%"><figcaption>Équipes terrain</figcaption></figure>
-      <figure class="g-item g-item--wide"><img src="assets/img/equipe-portrait.jpg" alt="Agent LSG en casque" loading="lazy" style="object-position:70% 30%"><figcaption>Accueil &amp; assistance</figcaption></figure>
+    <div class="mock reveal d1" aria-hidden="true">
+      <div class="mock__bar"><i></i><i></i><i></i><span>espace de gestion LSG</span></div>
+      <div class="mock__body">
+        <div class="mock__side"><b class="on">Tableau de bord</b><b>Dossiers</b><b>Escales</b><b>Entrepôt</b><b>Clients</b><b>Factures</b></div>
+        <div class="mock__main">
+          <div class="mock__kpis"><div><small>Dossiers ouverts</small><b>7</b></div><div><small>Navires à quai</small><b>2</b></div><div><small>Lots sous douane</small><b>4</b></div></div>
+          <div class="mock__chart"><i style="height:35%"></i><i style="height:55%"></i><i style="height:45%"></i><i style="height:75%"></i><i style="height:60%"></i><i style="height:90%"></i><i style="height:70%"></i></div>
+          <div class="mock__rows"><div>LSG-2026-0412 <span>Dédouané</span></div><div>LSG-2026-0405 <span>En livraison</span></div><div>LSG-2026-0427 <span>Déclaration en douane</span></div></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ RÉFÉRENCES ============ -->
-<section class="section section--cream" id="references">
+<!-- ============ INSTALLATIONS & ÉQUIPES ============ -->
+<section class="section section--bg" id="galerie">
   <div class="container">
-    <div class="section__head">
-      <p class="eyebrow reveal">06 — Clients &amp; partenaires</p>
-      <h2 class="title reveal">Ils font confiance à LSG</h2>
+    <div class="head head--c">
+      <p class="eyebrow reveal">Installations &amp; équipes</p>
+      <h2 class="title reveal">Sur le terrain, <em>au quotidien</em></h2>
+      <p class="lead reveal">Les entrepôts et les équipes LSG, et quelques images des ports et aéroports que nous fréquentons.</p>
     </div>
-    <div class="refs-logos">
-      <div class="reveal"><h3 class="subtitle">Clients</h3>
-        <div class="tags"><span>Vamed</span><span>Sogafric</span><span>Tractafic</span><span>Setrag</span><span>CFAO</span><span>DTP</span></div></div>
-      <div class="reveal"><h3 class="subtitle">Partenaires</h3>
-        <div class="tags"><span>FedEx / TNT</span><span>CDC</span><span>Centrimex</span><span>GabonOil</span><span>NewMaritime</span><span>Seafrigo</span></div></div>
+    <div class="gal reveal">
+      <figure class="g1 real" data-lightbox><img src="assets/img/equipe-terrain.jpg" alt="Agent LSG en gilet et casque guidant un camion chargé" loading="lazy"><figcaption>Sur le terrain, au chargement</figcaption></figure>
+      <figure class="g2 real" data-lightbox><img src="assets/img/entrepot.jpg" alt="Allée d'entrepôt avec rayonnages" loading="lazy" style="object-position:50% 50%"><figcaption>L'entrepôt</figcaption></figure>
+      <figure class="g3 real" data-lightbox><img src="assets/img/facade-agence.jpg" alt="Façade de l'entrepôt LSG et magasin sous douane" loading="lazy"><figcaption>Magasin sous douane</figcaption></figure>
+      <figure class="g4 real" data-lightbox><img src="assets/img/equipe-portrait.jpg" alt="Agent LSG souriant avec casque siglé" loading="lazy" style="object-position:70% 40%"><figcaption>Nos équipes</figcaption></figure>
+      <figure class="g5" data-lightbox data-credit="Photo d'illustration, Delrick Williams, CC BY-SA 4.0"><img src="assets/img/port-owendo.jpg" alt="Le port d'Owendo de nuit" loading="lazy"><figcaption>Le port d'Owendo (illustration)</figcaption></figure>
+      <figure class="g3" data-lightbox data-credit="Photo d'illustration, Trougnouf, CC BY 4.0"><img src="assets/img/grues-crepuscule.jpg" alt="Grues de port au crépuscule, ciel violet" loading="lazy"><figcaption>Grues de port (illustration)</figcaption></figure>
+      <figure class="g4" data-lightbox data-credit="Photo d'illustration, Rachel K. So, CC BY-SA 3.0"><img src="assets/img/cargo-aerien.jpg" alt="Boeing 747 cargo sur une piste" loading="lazy"><figcaption>Fret aérien (illustration)</figcaption></figure>
+      <figure class="g5" data-lightbox data-credit="Photo d'illustration, DoD, domaine public"><img src="assets/img/fret-aerien.jpg" alt="Avion cargo C-130 à l'aéroport de Libreville de nuit" loading="lazy"><figcaption>Aéroport de Libreville (illustration)</figcaption></figure>
     </div>
+    <p class="gal__note">Les photos marquées « Photo LSG » sont celles de l'entreprise ; les autres sont des images libres de droits d'illustration (crédits en bas de page).</p>
+  </div>
+</section>
+
+<!-- ============ CLIENTS ============ -->
+<section class="section" id="clients">
+  <div class="container">
+    <div class="head head--c">
+      <p class="eyebrow reveal">Clients &amp; partenaires</p>
+      <h2 class="title reveal">Ils nous <em>font confiance</em></h2>
+    </div>
+    <div class="logos reveal"><span>Vamed</span><span>Sogafric</span><span>Tractafic</span><span>Setrag</span><span>CFAO</span><span>DTP</span></div>
+    <p class="sub reveal">Nos partenaires</p>
+    <div class="logos logos--p reveal"><span>FedEx / TNT</span><span>CDC</span><span>Centrimex</span><span>GabonOil</span><span>NewMaritime</span><span>Seafrigo</span></div>
   </div>
 </section>
 
 <!-- ============ CONTACT ============ -->
-<section class="section section--dark contact" id="contact">
-  <div class="container contact__inner">
-    <div class="contact__info">
-      <p class="eyebrow eyebrow--light reveal">Contact</p>
-      <h2 class="title title--light reveal">Parlons de vos marchandises</h2>
-      <p class="reveal contact__lead">Import, export, escale de navire, entreposage ou colis express : décrivez-nous votre besoin, nous revenons vers vous rapidement.</p>
-      <ul class="coords">
-        <li class="reveal"><span class="coords__icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><div><small>Siège</small>Zone Fret Aéroportuaire — BP 217<br>Libreville · Owendo · Port-Gentil</div></li>
-        <li class="reveal"><span class="coords__icon"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><div><small>Téléphone</small><a href="tel:+24111442727">+241 11 44 27 27</a><br><a href="tel:+24165996283">+241 65 99 62 83</a></div></li>
-        <li class="reveal"><span class="coords__icon coords__icon--wa"><svg viewBox="0 0 24 24"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.5c0 3.5 2.5 6.5 6.5 6.8l1-1.6-2-1-1 1c-1.2-.5-2.2-1.5-2.7-2.7l1-1-1-2-1.6.9"/></svg></span><div><small>WhatsApp</small><a href="https://wa.me/24165996283?text=Bonjour%20LSG%2C%20je%20souhaite%20des%20informations%20sur%20vos%20services." target="_blank" rel="noopener">Écrivez-nous sur WhatsApp</a></div></li>
-        <li class="reveal"><span class="coords__icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><div><small>Courriel</small><a href="mailto:info.lsg@lsg-gabon.com">info.lsg@lsg-gabon.com</a><br><a href="mailto:cs.fedex@lsg-gabon.com">cs.fedex@lsg-gabon.com</a> <span class="mute">(FedEx)</span></div></li>
+<section class="section section--bg" id="contact">
+  <div class="container contact">
+    <div>
+      <p class="eyebrow reveal">Contact</p>
+      <h2 class="title reveal">Parlons de <em>votre expédition</em></h2>
+      <p class="lead reveal">Décrivez-nous votre besoin : nous revenons vers vous avec une proposition.</p>
+      <ul class="cinfo reveal">
+        <li><span class="cinfo__ico"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg></span><div><b>Adresse</b><span>BP 217, Zone Fret Aéroportuaire, Libreville</span></div></li>
+        <li><span class="cinfo__ico"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg></span><div><b>Téléphone</b><a href="tel:+24111442727">+241 11 44 27 27</a> · <a href="tel:+24165996283">+241 65 99 62 83</a></div></li>
+        <li><span class="cinfo__ico"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></span><div><b>E-mail</b><a href="mailto:info.lsg@lsg-gabon.com">info.lsg@lsg-gabon.com</a><br><a href="mailto:cs.fedex@lsg-gabon.com">cs.fedex@lsg-gabon.com</a> (FedEx / TNT)</div></li>
+        <li><span class="cinfo__ico"><svg class="ico" aria-hidden="true"><use href="#i-globe"/></svg></span><div><b>Site actuel</b><a href="https://www.lsg-gabon.com" target="_blank" rel="noopener">www.lsg-gabon.com</a></div></li>
       </ul>
+      <a class="btn btn--wa reveal" href="https://wa.me/24165996283?text=Bonjour%20LSG%2C%20j%27aimerais%20un%20renseignement." target="_blank" rel="noopener"><svg class="ico" style="fill:currentColor;stroke:none" aria-hidden="true"><use href="#i-wa"/></svg>Écrire sur WhatsApp</a>
     </div>
-
-    <form class="form reveal" id="contact-form" data-mail="info.lsg@lsg-gabon.com" novalidate>
+    <form class="card form reveal d1" data-quote data-subject="Demande de devis — site LSG" novalidate>
       <h3>Demande de devis</h3>
       <div class="form__row">
-        <label>Nom complet<input type="text" name="nom" required autocomplete="name"></label>
-        <label>Téléphone<input type="tel" name="tel" autocomplete="tel"></label>
+        <div class="field"><label for="f-nom">Nom *</label><input class="input" id="f-nom" name="nom" data-label="Nom" required autocomplete="name"></div>
+        <div class="field"><label for="f-soc">Société</label><input class="input" id="f-soc" name="societe" data-label="Société" autocomplete="organization"></div>
       </div>
-      <label>Courriel<input type="email" name="email" required autocomplete="email"></label>
-      <label>Type de demande
-        <select name="projet">
-          <option>Transit aérien</option>
-          <option>Transit maritime</option>
-          <option>Consignation de navire</option>
-          <option>Entreposage sous douane</option>
-          <option>Assistance administrative</option>
-          <option>Colis express FedEx / TNT</option>
-          <option>Autre</option>
-        </select>
-      </label>
-      <label>Votre message<textarea name="message" rows="4" required></textarea></label>
-      <button type="submit" class="btn btn--gold btn--block">Envoyer la demande</button>
-      <p class="form__note" id="form-note">Votre messagerie s'ouvrira avec la demande pré-remplie.</p>
+      <div class="form__row">
+        <div class="field"><label for="f-mail">E-mail *</label><input class="input" id="f-mail" type="email" name="email" data-label="E-mail" required autocomplete="email"></div>
+        <div class="field"><label for="f-tel">Téléphone</label><input class="input" id="f-tel" type="tel" name="tel" data-label="Téléphone" autocomplete="tel"></div>
+      </div>
+      <div class="field"><label for="f-srv">Service souhaité</label>
+        <select class="select" id="f-srv" name="service" data-label="Service">
+          <option>Transit aérien</option><option>Transit maritime</option><option>Consignation de navire</option><option>Entreposage sous douane</option><option>Douane / formalités</option><option>Colis express FedEx / TNT</option><option>Autre</option>
+        </select></div>
+      <div class="field"><label for="f-msg">Votre besoin *</label><textarea class="textarea" id="f-msg" name="message" data-label="Besoin" required placeholder="Marchandise, origine, destination, poids ou volume…"></textarea></div>
+      <div class="form__btns">
+        <button type="submit" class="btn btn--navy">Envoyer par e-mail <svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></button>
+        <button type="button" class="btn btn--wa" data-wa><svg class="ico" style="fill:currentColor;stroke:none" aria-hidden="true"><use href="#i-wa"/></svg>Envoyer par WhatsApp</button>
+      </div>
+      <p class="form__hint form__msg" aria-live="polite">Le bouton e-mail ouvre votre messagerie avec la demande prête à envoyer à info.lsg@lsg-gabon.com.</p>
     </form>
   </div>
 </section>
 
 </main>
 
-<!-- ============ FOOTER ============ -->
+<!-- ============ PIED DE PAGE ============ -->
 <footer class="footer">
-  <div class="container footer__inner">
-    <div class="footer__brand">
-      <img src="assets/img/logo.png" alt="Logo LSG" class="footer__logo">
-      <p><strong>Logistique Services Gabon</strong><br>Transit — Douanes — Consignation.</p>
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <span class="footer__logo"><img src="assets/img/logo.png" alt="LSG — Logistique Services Gabon" width="80" height="40" loading="lazy"></span>
+        <p>Logistique Services Gabon : transit, douanes, consignation.<br><em>La Qualité à Votre Service.</em></p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul><li><a href="#entreprise">L'entreprise</a></li><li><a href="#services">Services</a></li><li><a href="#suivi">Suivi de dossier</a></li><li><a href="#agences">Agences</a></li><li><a href="#contact">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Espaces</h4>
+        <ul><li><a href="clients.html">Espace clients &amp; armateurs</a></li><li><a href="clients.html#escales">Escales en cours</a></li><li><a href="espace/index.html">Espace de gestion</a></li></ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul><li>BP 217, Zone Fret Aéroportuaire, Libreville</li><li><a href="tel:+24111442727">+241 11 44 27 27</a></li><li><a href="tel:+24165996283">+241 65 99 62 83</a></li><li><a href="mailto:info.lsg@lsg-gabon.com">info.lsg@lsg-gabon.com</a></li></ul>
+      </div>
     </div>
-    <nav class="footer__nav" aria-label="Pied de page">
-      <a href="#entreprise">L'entreprise</a>
-      <a href="#expertises">Services</a>
-      <a href="#suivi">Suivi de dossier</a>
-      <a href="#installations">Installations</a>
-      <a href="#references">Références</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <p class="footer__copy">© <span id="year">2026</span> Logistique Services Gabon — Libreville. Tous droits réservés. <span class="footer__credit">Site développé par <strong>Rouana</strong>.</span></p>
-    <p class="footer__copy footer__photo">Photos : LSG ; « Port International d'Owendo » par Delrick Williams (Wikimedia Commons, CC BY-SA 4.0) ; avion C-130 à Libreville, DoD (domaine public). Proposition de site non officielle.</p>
+    <div class="credits">
+      <b>Crédits photos.</b> Photos de l'entreprise : LSG. Photos d'illustration via Wikimedia Commons : « Dock Cranes in Orange Sky », Eric Kilby, CC BY-SA 2.0 (image d'en-tête) ; grues de port, Trougnouf, CC BY 4.0 ; porte-conteneurs avec remorqueur, Martin Dörsch, CC0 ; Boeing 747 cargo Asiana Cargo, Rachel K. So, CC BY-SA 3.0 ; port d'Owendo de nuit, Delrick Williams, CC BY-SA 4.0 ; C-130 à l'aéroport de Libreville, US Department of Defense, domaine public.
+    </div>
+    <p class="footer__bottom">© 2026 Logistique Services Gabon — Libreville. Tous droits réservés. Site développé par <strong>Rouana</strong>.</p>
   </div>
 </footer>
 
-<!-- Lightbox -->
-<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Aperçu de l'image">
-  <button class="lightbox__close" aria-label="Fermer">&times;</button>
-  <button class="lightbox__nav lightbox__prev" aria-label="Image précédente">&#8249;</button>
-  <figure><img src="" alt=""><figcaption></figcaption></figure>
-  <button class="lightbox__nav lightbox__next" aria-label="Image suivante">&#8250;</button>
-</div>
+<a class="wa" href="https://wa.me/24165996283?text=Bonjour%20LSG%2C%20j%27aimerais%20un%20renseignement." target="_blank" rel="noopener" aria-label="Écrire à LSG sur WhatsApp"><svg class="ico" aria-hidden="true"><use href="#i-wa"/></svg></a>
 
-<!-- Contact rapide : WhatsApp + assistant -->
-<div class="fab" id="fab">
-  <a class="fab__btn fab__btn--wa" id="fab-wa" href="https://wa.me/24165996283?text=Bonjour%20LSG%2C%20je%20souhaite%20des%20informations%20sur%20vos%20services." target="_blank" rel="noopener" aria-label="Nous écrire sur WhatsApp">
-    <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-4-.5-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.8 5.2 2.2.9 3 1 4.1.8.7-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3z"/></svg>
-    <span class="fab__label">WhatsApp</span>
-  </a>
-  <button class="fab__btn fab__btn--chat" id="chat-toggle" aria-label="Poser une question à l'assistant" aria-expanded="false" aria-controls="chat">
-    <svg viewBox="0 0 24 24" aria-hidden="true" class="fab__ico-open"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></svg>
-    <svg viewBox="0 0 24 24" aria-hidden="true" class="fab__ico-close"><path d="M6 6l12 12M18 6L6 18"/></svg>
-    <span class="fab__label">Une question ?</span>
-  </button>
-</div>
-
-<section class="chat" id="chat" role="dialog" aria-label="Assistant LSG" aria-hidden="true">
-  <header class="chat__head">
-    <img src="assets/img/logo.png" alt="" class="chat__logo">
-    <div><strong>Assistant LSG</strong><span><i></i>Répond en direct · 24h/24</span></div>
-    <button class="chat__close" id="chat-close" aria-label="Fermer l'assistant">&times;</button>
-  </header>
-  <div class="chat__body" id="chat-body" aria-live="polite"></div>
-  <div class="chat__chips" id="chat-chips"></div>
-  <form class="chat__form" id="chat-form" autocomplete="off">
-    <input type="text" id="chat-input" placeholder="Posez votre question…" aria-label="Votre question" maxlength="300">
-    <button type="submit" aria-label="Envoyer"><svg viewBox="0 0 24 24"><path d="M4 12l16-8-6 16-2.5-6.5z"/></svg></button>
-  </form>
-</section>
-
-<script src="assets/js/demo-data.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/suivi.js"></script>
+<script src="assets/js/lsg-data.js"></script>
+<script src="assets/js/site.js"></script>
 <script src="assets/js/assistant.js"></script>
 </body>
 </html>
