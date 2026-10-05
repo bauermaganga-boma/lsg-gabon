@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LSG — Espace pro (démonstration)</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#06182b">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/gestion.css">
+</head>
+<body>
+
+<header class="bar">
+  <a class="bar__brand" href="index.html"><img src="assets/img/logo.png" alt="Logo LSG"><span>LSG <small>Espace pro</small></span></a>
+  <span class="bar__demo">Démonstration · données fictives</span>
+  <a class="bar__back" href="index.html#suivi">← Retour au site</a>
+</header>
+
+<main class="wrap">
+  <div class="intro">
+    <div>
+      <h1>Suivi des dossiers de transit</h1>
+      <p>Créez un dossier, faites-le avancer d'étape en étape et prévenez le client en un clic. Le client suit son dossier avec son numéro sur le site.</p>
+    </div>
+    <button class="btn btn--gold" id="btn-new">+ Nouveau dossier</button>
+  </div>
+
+  <section class="kpis" id="kpis" aria-label="Indicateurs"></section>
+
+  <section class="panel">
+    <div class="tools">
+      <input type="search" id="q" placeholder="Rechercher un n° de dossier, un client…" aria-label="Rechercher">
+      <select id="f-type" aria-label="Filtrer par type">
+        <option value="">Tous les types</option>
+        <option>Aérien</option><option>Maritime</option><option>Consignation</option><option>Express</option>
+      </select>
+      <select id="f-step" aria-label="Filtrer par étape"><option value="">Toutes les étapes</option></select>
+      <button class="btn btn--line" id="btn-csv">Exporter (CSV)</button>
+    </div>
+    <div class="table-wrap">
+      <table class="table" id="table">
+        <thead><tr><th>N° dossier</th><th>Client</th><th>Type</th><th>Trajet</th><th>Étape</th><th>Avancement</th><th></th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <p class="empty" id="empty" hidden>Aucun dossier ne correspond.</p>
+  </section>
+
+  <p class="foot">Les modifications sont enregistrées dans ce navigateur uniquement (démonstration). <button class="linklike" id="btn-reset">Réinitialiser les données de démo</button></p>
+</main>
+
+<!-- Fiche dossier -->
+<aside class="drawer" id="drawer" aria-hidden="true" role="dialog" aria-label="Fiche dossier">
+  <div class="drawer__head"><h2 id="d-ref"></h2><button class="x" id="d-close" aria-label="Fermer">&times;</button></div>
+  <div class="drawer__body" id="d-body"></div>
+</aside>
+<div class="scrim" id="scrim"></div>
+
+<!-- Nouveau dossier -->
+<dialog class="modal" id="modal">
+  <form method="dialog" id="new-form">
+    <h2>Nouveau dossier</h2>
+    <label>Client<input name="client" required></label>
+    <div class="mrow">
+      <label>Type<select name="type"><option>Aérien</option><option>Maritime</option><option>Consignation</option><option>Express</option></select></label>
+      <label>Agence<select name="agence"><option>Libreville</option><option>Owendo</option><option>Port-Gentil</option></select></label>
+    </div>
+    <label>Origine / provenance<input name="origine" required></label>
+    <label>Marchandises<input name="desc" required placeholder="Ex. 2 conteneurs 20 pieds — matériel"></label>
+    <label>Téléphone du client (WhatsApp)<input name="tel" inputmode="tel" placeholder="Ex. 24165996283"></label>
+    <div class="mrow mrow--end">
+      <button type="button" class="btn btn--line" id="new-cancel">Annuler</button>
+      <button type="submit" class="btn btn--gold">Créer le dossier</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="assets/js/demo-data.js"></script>
+<script src="assets/js/gestion.js"></script>
+</body>
+</html>

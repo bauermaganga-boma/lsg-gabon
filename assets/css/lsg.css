@@ -1,0 +1,42 @@
+/* ===== LSG : suivi de dossier, références, divers ===== */
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.mute { opacity: .65; font-size: .85em; }
+.footer__photo { font-size: .76rem; opacity: .7; margin-top: .6rem; max-width: 900px; }
+.refs-logos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem; }
+.refs-logos .subtitle { font-size: 1.2rem; margin-bottom: 0; }
+.refs-logos .tags { margin-top: .9rem; }
+.linklike { background: none; border: 0; padding: 0; font: inherit; color: var(--gold-2); text-decoration: underline; cursor: pointer; }
+.suivi__inner { display: grid; grid-template-columns: 1fr 1.1fr; gap: 3rem; align-items: start; }
+.track { display: flex; gap: .6rem; margin: 1.6rem 0 .8rem; max-width: 460px; }
+.track input { flex: 1; min-width: 0; padding: .95rem 1.1rem; border-radius: 999px; border: 1px solid rgba(255,255,255,.2); background: rgba(255,255,255,.08); color: #fff; font: inherit; font-weight: 600; letter-spacing: .02em; }
+.track input::placeholder { color: rgba(255,255,255,.45); font-weight: 500; }
+.track input:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+.track__hint { font-size: .85rem; color: rgba(255,255,255,.6); margin-bottom: 1.6rem; max-width: 460px; }
+.track__card { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); border-radius: var(--radius-lg); padding: 1.8rem; min-height: 260px; }
+.track__empty { color: rgba(255,255,255,.55); text-align: center; padding: 4rem 0; }
+.track__top { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.4rem; }
+.track__ref { font-family: var(--ff-display); font-size: 1.35rem; color: #fff; font-weight: 700; }
+.track__meta { color: rgba(255,255,255,.65); font-size: .88rem; margin-top: .2rem; }
+.badge { display: inline-block; padding: .35rem .8rem; border-radius: 999px; font-size: .78rem; font-weight: 800; background: var(--gold); color: var(--choco); }
+.badge--done { background: #4be08a; }
+.tl { list-style: none; margin: 0; padding: 0; position: relative; }
+.tl li { position: relative; padding: 0 0 1.15rem 2.1rem; color: rgba(255,255,255,.5); font-size: .95rem; }
+.tl li:last-child { padding-bottom: 0; }
+.tl li::before { content: ""; position: absolute; left: 7px; top: 18px; bottom: -2px; width: 2px; background: rgba(255,255,255,.15); }
+.tl li:last-child::before { display: none; }
+.tl li::after { content: ""; position: absolute; left: 0; top: 3px; width: 16px; height: 16px; border-radius: 50%; border: 2px solid rgba(255,255,255,.3); background: var(--choco); }
+.tl li.is-done { color: rgba(255,255,255,.9); }
+.tl li.is-done::before { background: var(--gold); }
+.tl li.is-done::after { background: var(--gold); border-color: var(--gold); }
+.tl li.is-current { color: #fff; font-weight: 700; }
+.tl li.is-current::after { background: var(--choco); border-color: var(--gold-2); box-shadow: 0 0 0 5px rgba(29,182,234,.3); }
+.tl small { display: block; font-weight: 500; color: rgba(255,255,255,.55); font-size: .8rem; }
+.track__note { margin-top: 1.4rem; font-size: .8rem; color: rgba(255,255,255,.5); }
+@media (max-width: 880px) {
+  .suivi__inner { grid-template-columns: 1fr; gap: 2rem; }
+  .refs-logos { grid-template-columns: 1fr; gap: 1.8rem; }
+}
+
+.nav a { white-space: nowrap; }
+.brand__text small { letter-spacing: .03em; text-transform: none; font-size: .72rem; white-space: nowrap; }
+@media (max-width: 1100px) { .nav { gap: 1rem; } }
